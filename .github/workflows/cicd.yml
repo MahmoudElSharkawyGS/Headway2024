@@ -2,6 +2,10 @@ name: E2E Tests
 
 on:
   workflow_dispatch:
+    inputs:
+      testsPath:
+        description: 'Path to Tests to be Executed'
+        default: ''
 
 jobs:
   E2E_Test:
@@ -25,7 +29,7 @@ jobs:
           maven-version: 3.9.9
 
       - name: Execute Tests
-        run: mvn -Dtest="google.tests.googleTestsFluentDesign" test
+        run: mvn -Dtest="${{ github.event.inputs.testsPath }}" test
 
       - name: Publish Report
         continue-on-error: true
