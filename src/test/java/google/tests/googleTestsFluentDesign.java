@@ -37,8 +37,8 @@ public class googleTestsFluentDesign {
         new HomePage(driver)
                 .navigate()
                 .assertGoogleHomePage()
-                .googleSearch("Headway 2024")
-                .assertOnFirstSearchResultsText("Headway Intern 2024 - Integration - JB5091189 | Cairo ...")
+                .googleSearch(testData.getTestData("searchQueries.SearchQuery2"))
+                .assertOnFirstSearchResultsText(testData.getTestData("firstSearchResultsExpected2"))
                 .clickOnFirstSearchResult();
     }
 

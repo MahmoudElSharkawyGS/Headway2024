@@ -1,6 +1,8 @@
 {
   "searchQueries": {
-    "searchQuery": "Giza Systems Headway 2024"
+    "searchQuery": "Giza Systems Headway 2024",
+    "SearchQuery2": "Giza Systems"
   },
-  "firstSearchResultsExpected": "Headway Intern 2024 - Integration - JB5091189 | Cairo ..."
+  "firstSearchResultsExpected": "Headway Intern 2024 - Integration - JB5091189 | Cairo ...",
+  "firstSearchResultsExpected2": "Giza Systems: Welcome"
 }
